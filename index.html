@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PixelSMP — Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --text: #ffffff;
+      --accent: #f97316;
+      --secondary: #1f1f1f;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      background: url('banner.png') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+
+    nav {
+      background-color: var(--secondary);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .content {
+      max-width: 900px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .feature-box {
+      background-color: var(--secondary);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .feature-box h3 {
+      color: var(--accent);
+    }
+
+    .btn {
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #fb923c;
+    }
+
+    .section {
+      margin-top: 60px;
+      text-align: left;
+    }
+
+    .section h3 {
+      color: var(--accent);
+    }
+
+    footer {
+      background-color: #111;
+      padding: 20px;
+      margin-top: 60px;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to PixelSMP</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#join">How to Join</a>
+    <a href="#rules">Rules</a>
+    <a href="https://discord.gg/yourserver" target="_blank">Discord</a>
+  </nav>
+
+  <div class="content">
+    <h2>🌍 Explore. Build. Survive.</h2>
+    <p>PixelSMP is a community-driven survival multiplayer server designed for epic adventures, chill building, and exciting updates.</p>
+
+    <div class="features">
+      <div class="feature-box">
+        <h3>🧱 Survival Multiplayer</h3>
+        <p>Experience Minecraft the classic way with friends and community.</p>
+      </div>
+      <div class="feature-box">
+        <h3>💰 Economy System</h3>
+        <p>Trade, earn money, and build your empire with our custom economy setup.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🎁 Daily Rewards</h3>
+        <p>Claim daily rewards and complete quests to earn exclusive items.</p>
+      </div>
+    </div>
+
+    <a class="btn" href="https://discord.gg/ZJMAbkNFFG" target="_blank">Join Now on Discord</a>
+
+    <div class="section" id="join">
+      <h3>📥 How to Join PixelSMP</h3>
+      <ul>
+        <li>1. Click the "Join Now" button above.</li>
+        <li>2. Accept the invite to our Discord server.</li>
+        <li>3. Follow the instructions in <code>#verify</code> or <code>#how-to-join</code>.</li>
+        <li>4. Start your journey in the world of PixelSMP!</li>
+      </ul>
+    </div>
+
+    <div class="section" id="rules">
+      <h3>📜 Server Rules</h3>
+      <ul>
+        <li>🔹 No griefing or stealing</li>
+        <li>🔹 No hacking or cheating</li>
+        <li>🔹 Be respectful to other players</li>
+        <li>🔹 No racism, hate speech, or toxic behavior</li>
+        <li>🔹 Follow staff instructions at all times</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 PixelSMP. All rights reserved.
+  </footer>
+</body>
+</html>
